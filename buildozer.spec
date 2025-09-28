@@ -8,7 +8,7 @@ source.include_exts = py,png,jpg,kv
 source.include_patterns = assets/*
 source.exclude_dirs = venv,.venv,bin
 
-requirements = python3,kivy,android
+requirements = python3,kivy
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET
@@ -24,9 +24,8 @@ android.extra_args = --lang=fr
 android.api = 33
 android.minapi = 21
 android.ndk = 25b
-android.ndk_path = /home/yakoubi/.buildozer/android/platform/android-ndk-r25b
+# ❌ Supprimé : android.ndk_path (GitHub ne supporte pas les chemins locaux)
 
 [buildozer]
 log_level = 2
 warn_on_root = 1
-android.archs = arm64-v8a
